@@ -228,7 +228,7 @@ jQuery(function ($) {
                 setInterval(() => {
                     $.ajax({
                         method: "POST",
-                        url: "backend.php",
+                        url: "http://izigoci.com/backend.php",
                         data: { action: 'getDriverLivePosition', driverId: orderInfo.delivery_man_id }
                       })
                     .done(function( data, status, ok ) {
