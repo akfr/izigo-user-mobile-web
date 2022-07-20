@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="zxx">
+<html lang="FR">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -29,7 +29,7 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <title>Livraison</title>
+        <title>IZIGO</title>
 
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
@@ -387,6 +387,6 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpLgOmvCbiSOJ2UDSPpjI9E5QW3UlHbOg"></script>
-        <script type="module" src="assets/js/live.js"></script>
+        <script type="module" src="assets/js/live.js?t=1491313943549"></script>
     </body>
 </html>

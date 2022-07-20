@@ -191,8 +191,11 @@ jQuery(function ($) {
 
         $.ajax({
             method: "POST",
-            url: "backend.php",
+            url: "http://izigoci.com/backend.php",
             data: { action: 'getOrderInfo', orderId: Number(orderId) }
+          })
+          .error(function (err){
+            console.log('Error: ', err);
           })
         .done(function( data, status, ok ) {
             var orderInfo = JSON.parse(data);
