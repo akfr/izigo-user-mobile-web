@@ -169,7 +169,6 @@ jQuery(function ($) {
         }
     ];
 
-    // const styles = [new google.maps.MapTypeStyle()];
     var mapOptions = {
         center: myLatLng,
         zoom: 13,
@@ -182,8 +181,6 @@ jQuery(function ($) {
     var directionDisplay = new google.maps.DirectionsRenderer();
     directionDisplay.setMap(map);
 
-
-
     function calcRoute() {
         var searchParams = new URLSearchParams(window.location.search);
         var orderId = searchParams.get('orderId')
@@ -191,7 +188,7 @@ jQuery(function ($) {
 
         $.ajax({
             method: "POST",
-            url: "http://izigoci.com/backend.php",
+            url: "backend.php",
             data: { action: 'getOrderInfo', orderId: Number(orderId) }
           })
         .done(function( data, status, ok ) {
@@ -199,17 +196,6 @@ jQuery(function ($) {
             var originAddress = JSON.parse(orderInfo.origin_address);
             var destinationAddress = JSON.parse(orderInfo.destination_address);
             
-            // var bounds = new google.maps.LatLngBounds();
-            // // for (var i = 0; i < lieux.length; i++) {
-            // //   var marker = new google.maps.Marker({
-            // //     position: lieux[i].coordonnees,
-            // //     nom: lieux[i].nom,
-            // //     map: map
-            // //   });
-            // //   bounds.extend(marker.getPosition());
-            // // }
-            // map.fitBounds(bounds);
-
             var request = {
                 origin: new google.maps.LatLng(originAddress.lat, originAddress.lng), // new google.maps.LatLng(5.3117364, -4.0088345), //document.getElementById("from").value,
                 destination: new google.maps.LatLng(destinationAddress.lat, destinationAddress.lng), // new google.maps.LatLng(5.316176899999999, -3.9967327), //document.getElementById("to").value,
@@ -224,11 +210,38 @@ jQuery(function ($) {
                 }
             });
 
-            if(orderInfo.delivery_man_id != null){
+            if (orderInfo.status === 'pending') {
+                progress.setAttribute('value', 0 * 100 / 4 );
+                $("#pending").addClass("done");
+            } else if(orderInfo.status === 'confirmed'){
+                progress.setAttribute('value', 1 * 100 / 4 );
+                $("#pending").addClass("done");
+                $("#confirmed").addClass("done");
+            } else if(orderInfo.status === 'processing'){
+                progress.setAttribute('value', 2 * 100 / 4 );
+                $("#pending").addClass("done");
+                $("#confirmed").addClass("done");
+                $("#processing").addClass("done");
+            } else if(orderInfo.status === 'out_for_delivery'){
+                progress.setAttribute('value', 3 * 100 / 4 );
+                $("#pending").addClass("done");
+                $("#confirmed").addClass("done");
+                $("#processing").addClass("done");
+                $("#out_for_delivery").addClass("done");
+            } else if(orderInfo.status === 'delivered'){
+                progress.setAttribute('value', 4 * 100 / 4 );
+                $("#pending").addClass("done");
+                $("#confirmed").addClass("done");
+                $("#processing").addClass("done");
+                $("#out_for_delivery").addClass("done");
+                $("#delivered").addClass("done");
+            }
+
+            if (orderInfo.delivery_man_id != null) {
                 setInterval(() => {
                     $.ajax({
                         method: "POST",
-                        url: "http://izigoci.com/backend.php",
+                        url: "backend.php",
                         data: { action: 'getDriverLivePosition', driverId: orderInfo.delivery_man_id }
                       })
                     .done(function( data, status, ok ) {
@@ -269,60 +282,23 @@ jQuery(function ($) {
     }
     calcRoute();
 
-}(jQuery));
+    const stepButtons = document.querySelectorAll('.step-button');
+            const progress = document.querySelector('#progress');
 
-//  function initMap() {
-//     const directionsService = new google.maps.DirectionsService();
-//     const directionsRenderer = new google.maps.DirectionsRenderer();
-//     const map = new google.maps.Map(
-//       document.getElementById("map"),
-//       {
-//         zoom: 7,
-//         center: { lat: 41.85, lng: -87.65 },
-//       }
-//     );
-  
-//     directionsRenderer.setMap(map);
-  
-//     const onChangeHandler = function () {
-//       calculateAndDisplayRoute(directionsService, directionsRenderer);
-//     };
-  
-//     (document.getElementById("start")).addEventListener(
-//       "change",
-//       onChangeHandler
-//     );
-//     (document.getElementById("end")).addEventListener(
-//       "change",
-//       onChangeHandler
-//     );
-//   }
-  
-//   function calculateAndDisplayRoute(
-//     directionsService,
-//     directionsRendererr
-//   ) {
-//     directionsService
-//       .route({
-//         origin: {
-//           query: (document.getElementById("start")).value,
-//         },
-//         destination: {
-//           query: (document.getElementById("end")).value,
-//         },
-//         travelMode: google.maps.TravelMode.DRIVING,
-//       })
-//       .then((response) => {
-//         directionsRenderer.setDirections(response);
-//       })
-//       .catch((e) => window.alert("Directions request failed due to " + status));
-//   }
-  
-// //   declare global {
-// //     interface Window {
-// //       initMap: () => void;
-// //     }
-// //   }
-//   window.initMap = initMap;
-//   export {};
+    Array.from(stepButtons).forEach((button,index) => {
+        button.addEventListener('click', () => {
+            progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );
+
+            stepButtons.forEach((item, secindex)=>{
+                if(index > secindex){
+                    item.classList.add('done');
+                }
+                if(index < secindex){
+                    item.classList.remove('done');
+                }
+            })
+        })
+    })
+
+}(jQuery));
   

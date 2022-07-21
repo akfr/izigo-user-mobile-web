@@ -24,6 +24,8 @@ function getOrderInfo($con, $orderId) {
     $query = "select * from orders where id = " . $orderId;
     $res = mysqli_query($con, $query) or die(mysqli_error($con));
     $row = mysqli_fetch_object($res);
-    echo json_encode(['origin_address' => $row->origin_address, 'destination_address' => $row->destination_address, "delivery_man_id" => $row->delivery_man_id]);
+    echo json_encode(['origin_address' => $row->origin_address, 
+    'destination_address' => $row->destination_address, 
+    "delivery_man_id" => $row->delivery_man_id, 'status' => $row->order_status]);
 }
 ?>

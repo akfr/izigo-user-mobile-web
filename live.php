@@ -173,8 +173,8 @@
                         <div class="steps">
                                 <progress id="progress" value=0 max=100 ></progress>
                                 <div class="step-item">
-                                    <button class="step-button text-center" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button id="pending" class="step-button text-center" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pending" aria-expanded="true" aria-controls="pending">
                                         1
                                     </button>
                                     <div class="step-title">
@@ -182,8 +182,8 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
                                         2
                                     </button>
                                     <div class="step-title">
@@ -191,8 +191,8 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
                                         3
                                     </button>
                                     <div class="step-title">
@@ -200,8 +200,8 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
                                         4
                                     </button>
                                     <div class="step-title">
@@ -209,8 +209,8 @@
                                     </div>
                                 </div>
                                 <div class="step-item">
-                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
                                         5
                                     </button>
                                     <div class="step-title">
@@ -447,24 +447,5 @@
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpLgOmvCbiSOJ2UDSPpjI9E5QW3UlHbOg"></script>
         <script type="module" src="assets/js/live.js?t=1491313943550"></script>
-        <script>
-            const stepButtons = document.querySelectorAll('.step-button');
-            const progress = document.querySelector('#progress');
-
-            Array.from(stepButtons).forEach((button,index) => {
-                button.addEventListener('click', () => {
-                    progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );
-
-                    stepButtons.forEach((item, secindex)=>{
-                        if(index > secindex){
-                            item.classList.add('done');
-                        }
-                        if(index < secindex){
-                            item.classList.remove('done');
-                        }
-                    })
-                })
-            })
-        </script>
     </body>
 </html>
