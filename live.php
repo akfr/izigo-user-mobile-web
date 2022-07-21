@@ -71,10 +71,10 @@
                         </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: jomarsystems@gmail.com</a>
+                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="tel:0749221939" class="nav-link">Numéro: 0749221939</a>
+                        <a href="tel: " class="nav-link">Numéro: </a>
                     </li>
                 </ul>
             </div>
@@ -163,6 +163,63 @@
         <div id="home"  class="main-banner">
             <div class="d-table">
                 <div class="d-table-cell">
+
+                <div class = 'stepClass'>
+                    <div class="container">
+                       <div class="accordion" id="accordionExample">
+                          
+                        <div class="steps">
+                                <progress id="progress" value=0 max=100 ></progress>
+                                <div class="step-item">
+                                    <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        1
+                                    </button>
+                                    <div class="step-title">
+                                        Commande placée
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2
+                                    </button>
+                                    <div class="step-title">
+                                        Commande acceptée
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        3
+                                    </button>
+                                    <div class="step-title">
+                                        Ramassage en cours
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        4
+                                    </button>
+                                    <div class="step-title">
+                                        Livraison en cours
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        5
+                                    </button>
+                                    <div class="step-title">
+                                        Livraison effectuée
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                     <div class="container-fluid-2">
                         <div id="map"></div>
                     </div>

@@ -89,10 +89,10 @@
                         </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: jomarsystems@gmail.com</a>
+                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: info@izigoci.com</a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="tel:0749221939" class="nav-link">Numéro: 0749221939</a>
+                        <a href="tel:" class="nav-link">Numéro: </a>
                     </li>
                 </ul>
             </div>
@@ -304,7 +304,7 @@
                 <div class="section-title">
                     <h2>Qui sommes-nous?</h2>
                     <div class="bar"></div>
-                    <p>Nous somme une application specialisée dans toute sorte de livraison</p>
+                    <p>IZIGO est une application specialisée dans toute sorte de livraison</p>
                 </div>
 
                 <div class="row align-items-center">
@@ -326,7 +326,6 @@
 
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img src="assets/img/abou.png" alt="image">
                         </div>
                     </div>
                 </div>
@@ -402,8 +401,7 @@
                             <div class="icon">
                                 <i class="fa fa-code"></i>
                             </div>
-                            <h3>gestion du type de colis</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Gestion du type de colis</h3>
                         </div>
                     </div>
 
@@ -413,7 +411,6 @@
                                 <i class="fa fa-eye"></i>
                             </div>
                             <h3>Gestion du type d'angin pour la livraison</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
                         </div>
                     </div>
 
@@ -422,8 +419,7 @@
                             <div class="icon">
                                 <i class="fa fa-camera"></i>
                             </div>
-                            <h3>Voir detail de livraison</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Partager ma livraison</h3>
                         </div>
                     </div>
                 </div>
@@ -459,81 +455,64 @@
                 <div class="section-title">
                     <h2>Voici Izigo</h2>
                     <div class="bar"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
                 </div>
 
                 <div class="screenshot-slider owl-carousel owl-theme">
-                    <div class="screenshot-item">
+                <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-1.png" alt="image">
+                            <img src="assets/img/1.jpeg" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-2.png" alt="image">
+                            <img src="assets/img/2.jpeg" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-3.png" alt="image">
+                            <img src="assets/img/3.jpeg" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-4.png" alt="image">
+                            <img src="assets/img/4.jpeg" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-5.png" alt="image">
-                        </div>
-                    </div>
-
-                    <!-- <div class="screenshot-item">
-                        <div class="image">
-                            <img src="assets/img/screenshot/6.png" alt="image">
-                        </div>
-                    </div> -->
-
-                    <div class="screenshot-item">
-                        <div class="image">
-                            <img src="assets/img/screenshot-1.png" alt="image">
+                            <img src="assets/img/5.jpeg" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-2.png" alt="image">
+                            <img src="assets/img/6.jpeg" alt="image">
                         </div>
                     </div>
-
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-3.png" alt="image">
+                            <img src="assets/img/7.jpeg" alt="image">
                         </div>
                     </div>
-
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-4.png" alt="image">
+                            <img src="assets/img/8.jpeg" alt="image">
                         </div>
                     </div>
-
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot-5.png" alt="image">
+                            <img src="assets/img/9.jpeg" alt="image">
                         </div>
                     </div>
-
-                    <!-- <div class="screenshot-item">
+                    <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/screenshot/6.png" alt="image">
+                            <img src="assets/img/10.jpeg" alt="image">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>

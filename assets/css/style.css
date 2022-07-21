@@ -51,6 +51,16 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.about-image{
+  height: 400px;
+  width: 600px;
+  background-image: url(../img/Tech.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -126,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
+  background-color: #fc6957 !important;
 }
 
 .default-btn {
@@ -153,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #f9210f !important;
+  background-color: #fc6957 !important;
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -331,7 +342,7 @@ Preloader Area CSS
   margin-right: 8%;
 }
 .navbar-new-bottom{
-  background-color: #f9210f;
+  background-color: #fc6957;
   box-shadow: 0 5px 6px -2px rgba(0,0,0,.3);
   /* border-top: 1px solid #e0e0e0; */
   /* margin-top: 4%; */
@@ -426,11 +437,11 @@ Navbar Area CSS
     margin-top: 20px; 
 }  
 .logo h2{
-  color: #f9210f;
+  color: #fc6957;
   font-weight: bolder;
 }
 .foot{
-  color: #f9210f;
+  color: #fc6957;
 }
 
 .navbar-light .navbar-nav {
@@ -466,7 +477,7 @@ Navbar Area CSS
 }
 
 .navbar-light .navbar-nav .nav-item a:hover, .navbar-light .navbar-nav .nav-item a:focus, .navbar-light .navbar-nav .nav-item a.active {
-  color: #f9210f;
+  color: #fc6957;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -496,7 +507,7 @@ Navbar Area CSS
 }
 
 .navbar-light .others-option .option-item {
-  color: #fa2205;
+  color: #fc6957;
   display: inline-block;
   position: relative;
   line-height: 1;
@@ -507,7 +518,7 @@ Navbar Area CSS
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #fa2205;
+  color: #fc6957;
   font-size: 20px;
   font-weight: 600;
   
@@ -519,7 +530,7 @@ Navbar Area CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 20px;
-  color: #fa2205;
+  color: #fc6957;
   font-size: 18px;
 }
 
@@ -1091,6 +1102,7 @@ Features Area CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .single-features .icon i {
@@ -2116,7 +2128,7 @@ Contact Area CSS
 }
 
 .contact-form .with-errors ul li {
-  color: red;
+  color: #fc6957;
 }
 
 .contact-form #msgSubmit {
@@ -2297,7 +2309,7 @@ Subscribe Area CSS
 }
 
 .newsletter-form #validator-newsletter {
-  color: red;
+  color: #fc6957;
   position: relative;
   top: 8px;
   font-size: 16px;
@@ -2408,7 +2420,7 @@ Banner Area Two CSS
 }
 
 .main-banner-two .banner-content .banner-form #validator-newsletter {
-  color: red;
+  color: #fc6957;
   position: relative;
   top: 8px;
   font-size: 16px;
@@ -3804,4 +3816,19 @@ Go Top CSS
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
   padding-left: 10px;
+}
+
+/* live */
+
+.stepClass{
+  width: 1200px; 
+  height: 100px;
+   /* background-color: #0062cc;  */
+  margin-left: auto;
+  margin-right: auto;
+  /* display: inline-block */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
