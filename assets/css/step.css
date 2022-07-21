@@ -1,0 +1,68 @@
+:root {
+    --prm-color: #fc6957;
+    --prm-gray: #b1b1b1;
+}
+
+/* CSS */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    /* width: 1000px; */
+}
+
+.step-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+
+.step-button[aria-expanded="true"] {
+    width: 30px;
+    height: 30px;
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.done {
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 90%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 55px;
+    
+    align-items: center;
+    height: 10px;
+    /* margin-left: 18px; */
+    margin-bottom: 18px;
+    border-top: none;
+    
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color)!important;
+    transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray) ;
+
+}

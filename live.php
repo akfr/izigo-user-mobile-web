@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <link rel="stylesheet" href="assets/css/step.css">
 
         <title>IZIGO</title>
 
@@ -445,5 +447,24 @@
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpLgOmvCbiSOJ2UDSPpjI9E5QW3UlHbOg"></script>
         <script type="module" src="assets/js/live.js?t=1491313943550"></script>
+        <script>
+            const stepButtons = document.querySelectorAll('.step-button');
+            const progress = document.querySelector('#progress');
+
+            Array.from(stepButtons).forEach((button,index) => {
+                button.addEventListener('click', () => {
+                    progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );
+
+                    stepButtons.forEach((item, secindex)=>{
+                        if(index > secindex){
+                            item.classList.add('done');
+                        }
+                        if(index < secindex){
+                            item.classList.remove('done');
+                        }
+                    })
+                })
+            })
+        </script>
     </body>
 </html>
