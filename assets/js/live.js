@@ -197,6 +197,7 @@ jQuery(function ($) {
             data: { action: 'getOrderInfo', orderId: Number(orderId) }
           })
         .done(function( data, status, ok ) {
+            var orderInfo = JSON.parse(data);
             handleOrderData(data)
 
             if (orderInfo.delivery_man_id != null) {
