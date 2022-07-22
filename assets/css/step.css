@@ -66,3 +66,75 @@
     background-color: var(--prm-gray) ;
 
 }
+
+
+@media (max-width: 1280px) {
+    /* .main-banner{
+      display: none;
+    } */
+  
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: relative;
+        /* width: 1000px; */
+    }
+    
+    .step-button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--prm-gray);
+        transition: .4s;
+    }
+    .step-title{
+        font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: relative;
+        /* width: 1000px; */
+    }
+    .step-button {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--prm-gray);
+        transition: .4s;
+    }
+    .step-title{
+        font-size: 7px;
+    }
+    #progress {
+        height: 5px;
+    }
+    .step-button{
+        font-size: 10px;
+    }
+  }
+  
+  .reload{
+    height: 40px;
+    width: 80px;
+    /* background-color: #969696; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .loading{
+    width: 7rem;
+    margin: auto;
+  }

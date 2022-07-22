@@ -9,7 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <!-- Bootstrap Min CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Animate Min CSS -->
@@ -166,61 +167,63 @@
             <div class="d-table">
                 <div class="d-table-cell">
 
-                <div class = 'stepClass'>
-                    <div class="container">
-                       <div class="accordion" id="accordionExample">
-                          
-                        <div class="steps">
-                                <progress id="progress" value=0 max=100 ></progress>
-                                <div class="step-item">
-                                    <button id="pending" class="step-button text-center" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#pending" aria-expanded="true" aria-controls="pending">
-                                        1
-                                    </button>
-                                    <div class="step-title">
-                                        Commande placée
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
-                                        2
-                                    </button>
-                                    <div class="step-title">
-                                        Commande acceptée
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
-                                        3
-                                    </button>
-                                    <div class="step-title">
-                                        Ramassage en cours
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
-                                        4
-                                    </button>
-                                    <div class="step-title">
-                                        Livraison en cours
-                                    </div>
-                                </div>
-                                <div class="step-item">
-                                    <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
-                                        5
-                                    </button>
-                                    <div class="step-title">
-                                        Livraison effectuée
-                                    </div>
-                                </div>
+                        <div class = 'stepClass'>
+                            <div class="container">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="steps">
+                                        <progress id="progress" value=0 max=100 ></progress>
+                                        <div class="step-item">
+                                            <button id="pending" class="step-button text-center" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#pending" aria-expanded="true" aria-controls="pending">
+                                                1
+                                            </button>
+                                            <div class="step-title">
+                                                Commande placée
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
+                                                2
+                                            </button>
+                                            <div class="step-title">
+                                                Commande acceptée
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
+                                                3
+                                            </button>
+                                            <div class="step-title">
+                                                Ramassage en cours
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
+                                                4
+                                            </button>
+                                            <div class="step-title">
+                                                Livraison en cours
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
+                                                5
+                                            </button>
+                                            <div class="step-title">
+                                                Livraison effectuée
+                                            </div>
+                                        </div>
+                                    </div><!--Steps-->
+                                </div><!--accordionExample-->
+                            </div><!--container-->
+                            <div class="reload">
+                                <button id="refresh" class="btn btn-secondary"><i class="fa fa-refresh"></i></button>
                             </div>
                         </div>
-                        </div>
-                    </div>
 
                     <div class="container-fluid-2">
                         <div id="map"></div>
