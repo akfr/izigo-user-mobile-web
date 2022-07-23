@@ -1,0 +1,136 @@
+
+:root {
+    --prm-color: #fc6957;
+    --prm-gray: #b1b1b1;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.step-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+.step-button[aria-expanded="true"] {
+    width: 25px;
+    height: 25px;
+    background-color: var(--prm-color);
+    color: #fff;
+}
+.done {
+    background-color: var(--prm-color);
+    color: #fff;
+}
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px; 
+     margin-bottom: 18px; 
+}
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+
+}
+
+@media (max-width: 768px) {
+    .navbar-new-bottom{
+      display: none;
+    }
+    .step-title{
+        font-size: 10px;
+    }
+    .step-button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--prm-gray);
+        transition: .4s;
+    }
+    #progress{
+        height: 5px; 
+    }
+  
+    
+  }
+
+  @media (width: 768px) {
+    #progress{
+        width: 100%;
+    }
+  }
+
+
+@media (width: 1280px) {
+    #progress {
+        -webkit-appearance:none;
+          position: absolute;
+          width: 95%;
+          z-index: 5;
+          height: 10px;
+          margin-left: 18px;
+          margin-bottom: 18px;
+      }
+  
+    
+  }
+@media (width: 1024px) {
+    #progress {
+        -webkit-appearance:none;
+          position: absolute;
+          width: 95%;
+          z-index: 5;
+          height: 10px;
+          margin-left: 18px;
+          margin-bottom: 18px;
+      }
+  
+    
+  }
+@media (max-width: 1023px) {
+    #progress {
+        -webkit-appearance:none;
+          position: absolute;
+          width: 90%;
+          z-index: 5;
+          height: 10px;
+          margin-left: 18px;
+          margin-bottom: 18px;
+      }
+  
+    
+  }
+
+.reload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.loading{
+    width: 7rem;
+    margin: auto;
+  }
