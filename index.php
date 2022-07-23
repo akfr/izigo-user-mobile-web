@@ -29,9 +29,13 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
 
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Demo CSS -->
+        <link rel="stylesheet" href="css/demo.css">
+
         <title>IZIGO</title>
 
-        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="icon" type="image/png" href="assets/img/log.png">
     </head>
 
     <body data-spy="scroll" data-offset="120">
@@ -89,10 +93,10 @@
                         </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: info@izigoci.com</a>
+                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: jomarsystems@gmail.com</a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="tel:" class="nav-link">Numéro: </a>
+                        <a href="tel:0749221939" class="nav-link">Numéro: 0749221939</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +110,7 @@
                        
                     </a> -->
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <h2>Izigo</h2>
                         </a>
                    </div>
@@ -137,11 +141,11 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#screenshots" class="nav-link">
                                 Captures d'écran
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a href="#faq" class="nav-link">
@@ -160,9 +164,8 @@
                                 Contact
                             </a>
                         </li>
-                    </ul>
 
-                    <div class="others-option">
+                        <div class="others-option">
                         <div class="d-flex align-items-center">
                             <div class="option-item">
                                 <a href="#" class="default-btn" id='code'>
@@ -172,6 +175,10 @@
                             </div>
                         </div>
                     </div>
+
+                    </ul>
+
+                    
                 </div>
             </div>
         </nav>
@@ -304,7 +311,7 @@
                 <div class="section-title">
                     <h2>Qui sommes-nous?</h2>
                     <div class="bar"></div>
-                    <p>IZIGO est une application specialisée dans toute sorte de livraison</p>
+                    <p>Nous somme une application specialisée dans toute sorte de livraison</p>
                 </div>
 
                 <div class="row align-items-center">
@@ -326,6 +333,7 @@
 
                     <div class="col-lg-6">
                         <div class="about-image">
+                            <!-- <img src="assets/img/accueil.jpg" alt="image" white='800px'> -->
                         </div>
                     </div>
                 </div>
@@ -360,7 +368,7 @@
         <section id="features" class="features-area pb-70">
             <div class="container">
                 <div class="section-title">
-                    <h2>Fonctionnalités impressionnantes</h2>
+                    <h2>Quelques fonctionnalités d'Izigo</h2>
                     <div class="bar"></div>
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
                 </div>
@@ -401,7 +409,8 @@
                             <div class="icon">
                                 <i class="fa fa-code"></i>
                             </div>
-                            <h3>Gestion du type de colis</h3>
+                            <h3>gestion du type de colis</h3>
+                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
                         </div>
                     </div>
 
@@ -411,6 +420,7 @@
                                 <i class="fa fa-eye"></i>
                             </div>
                             <h3>Gestion du type d'angin pour la livraison</h3>
+                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
                         </div>
                     </div>
 
@@ -419,7 +429,8 @@
                             <div class="icon">
                                 <i class="fa fa-camera"></i>
                             </div>
-                            <h3>Partager ma livraison</h3>
+                            <h3>Voir detail de livraison</h3>
+                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
                         </div>
                     </div>
                 </div>
@@ -455,64 +466,78 @@
                 <div class="section-title">
                     <h2>Voici Izigo</h2>
                     <div class="bar"></div>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
                 </div>
 
                 <div class="screenshot-slider owl-carousel owl-theme">
-                <div class="screenshot-item">
+                    <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/1.jpeg" alt="image">
+                            <img src="assets/img/1.png" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/2.jpeg" alt="image">
+                            <img src="assets/img/2.png" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/3.jpeg" alt="image">
+                            <img src="assets/img/3.png" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/4.jpeg" alt="image">
+                            <img src="assets/img/4.png" alt="image">
                         </div>
                     </div>
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/5.jpeg" alt="image">
+                            <img src="assets/img/5.png" alt="image">
                         </div>
                     </div>
+                    
+
+                    <!-- <div class="screenshot-item">
+                        <div class="image">
+                            <img src="assets/img/screenshot/6.png" alt="image">
+                        </div>
+                    </div> -->
 
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/6.jpeg" alt="image">
+                            <img src="assets/img/6.png" alt="image">
                         </div>
                     </div>
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/7.jpeg" alt="image">
+                            <img src="assets/img/7.png" alt="image">
                         </div>
                     </div>
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/8.jpeg" alt="image">
+                            <img src="assets/img/8.png" alt="image">
                         </div>
                     </div>
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/9.jpeg" alt="image">
+                            <img src="assets/img/9.png" alt="image">
                         </div>
                     </div>
                     <div class="screenshot-item">
                         <div class="image">
-                            <img src="assets/img/10.jpeg" alt="image">
+                            <img src="assets/img/10.png" alt="image">
                         </div>
                     </div>
+
+                    <!-- <div class="screenshot-item">
+                        <div class="image">
+                            <img src="assets/img/screenshot/6.png" alt="image">
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -759,371 +784,16 @@
          <!-- End Overview Area -->
 
          <!-- Start Pricing Area -->
-        <section class="pricing-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Forfait tarifaire</h2>
-                    <div class="bar"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
-                </div>
-
-                <div class="tab pricing-list-tab">
-                    <ul class="tabs">
-                        <li>
-                            <a href="#">
-                               Mensuel
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Annuel
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="tab_content">
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Standard</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>33 <sub>/ monthly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                 Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Personal</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>69 <sub>/ monthly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                  Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Business</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>99 <sub>/ monthly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                   Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Standard</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>33 <sub>/ yearly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                   Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Personal</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>69 <sub>/ yearly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                   Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="single-pricing-table">
-                                        <div class="pricing-header">
-                                            <h3>Business</h3>
-                                        </div>
-
-                                        <div class="price">
-                                            <sup>$</sup>99 <sub>/ yearly</sub>
-                                        </div>
-
-                                        <ul class="pricing-features">
-                                            <li>
-                                                <i class="fas fa-check"></i>
-                                                Extra features
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Lifetime free support
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Upgrate options
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Full access
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                Web Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-check"></i>
-                                                App Design
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-times"></i>
-                                                Web Developement
-                                            </li>
-                                        </ul>
-
-                                        <div class="pricing-btn">
-                                            <a href="#" class="default-btn">
-                                                   Acheter
-                                                <span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="default-shape">
-                <div class="shape-1">
-                    <img src="assets/img/shape/1.png" alt="image">
-                </div>
-
-                <div class="shape-2 rotateme">
-                    <img src="assets/img/shape/2.png" alt="image">
-                </div>
-
-                <div class="shape-3">
-                    <img src="assets/img/shape/3.svg" alt="image">
-                </div>
-
-                <div class="shape-4">
-                    <img src="assets/img/shape/4.svg" alt="image">
-                </div>
-
-                <div class="shape-5">
-                    <img src="assets/img/shape/5.png" alt="image">
-                </div>
-            </div>
-        </section>
+        <!--  -->
          <!-- End Pricing Area -->
 
         <!-- Start Faq Area -->
-        <section id="faq" class="faq-area ptb-100">
+        <!-- <section id="faq" class="faq-area ptb-100">
             <div class="container">
                 <div class="section-title">
                     <h2>Questions fréquemment posées</h2>
                     <div class="bar"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
+                    
                 </div>
 
                 <div class="row align-items-center">
@@ -1166,14 +836,7 @@
                                     <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
                                 </li>
                                 
-                                <!-- <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fa fa-chevron-down"></i>
-                                        Why Choose Our Services In Your Business?
-                                    </a>
-        
-                                    <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
-                                </li> -->
+                               
                             </ul>
                         </div>
                     </div>
@@ -1207,7 +870,7 @@
                     <img src="assets/img/shape/5.png" alt="image">
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Faq Area -->
 
          <!-- Start Team Area -->
@@ -1562,9 +1225,9 @@
                             <div class="contact-info-content">
                                 <h3>Contactez-nous par votre numéro de téléphone ou votre adresse e-mail</h3>
                                 <h2>
-                                    <a href="tel:+1-485-456-0102">+1-485-456-0102</a>
-                                    <span>or</span>
-                                    <a href="mailto:hello@spacle.com">hello@colugo.com</a>
+                                    <a href="tel:+2250749221939">0749221939</a>
+                                    <span>ou</span>
+                                    <a href="mailto:aide@izigo.com">aide@izigo.com</a>
                                 </h2>
         
                                 <ul class="social">
@@ -1631,7 +1294,7 @@
 
                     <div class="col-lg-6 col-md-6">
                         <form class="newsletter-form">
-                            <input type="email" class="input-newsletter" placeholder="Enter your Email" name="EMAIL" required autocomplete="off">
+                            <input type="email" class="input-newsletter" placeholder="Entrer votre Email" name="EMAIL" required autocomplete="off">
                             <button type="submit">
                             Abonnez-vous maintenant
                             </button>
@@ -1836,6 +1499,12 @@
         <script src="assets/js/main.js"></script>
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        
+
+
+
+       
         
     </body>
 </html>

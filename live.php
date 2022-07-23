@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="FR">
+<html lang="fr">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -10,7 +10,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
+        <!-- Bootstrap 5.1 CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+      crossorigin="anonymous">
+
+      
+
         <!-- Bootstrap Min CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Animate Min CSS -->
@@ -30,7 +37,8 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         
-        <link rel="stylesheet" href="assets/css/step.css">
+        <!-- <link rel="stylesheet" href="css/demo.css"> -->
+        <link rel="stylesheet" href="css/style.css">
 
         <title>IZIGO</title>
 
@@ -74,10 +82,10 @@
                         </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: </a>
+                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: jomarsystems@gmail.com</a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="tel: " class="nav-link">Numéro: </a>
+                        <a href="tel:0749221939" class="nav-link">Numéro: 0749221939</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +99,7 @@
                        
                     </a> -->
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <h2>Izigo</h2>
                         </a>
                    </div>
@@ -105,13 +113,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">
+                            <a href="index.php" class="nav-link">
                                 Accueil
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">
+                            <a href="index.php" class="nav-link">
                                 A propos
                             </a>
                         </li>
@@ -122,14 +130,14 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="#screenshots" class="nav-link">
+                        <!-- <li class="nav-item">
+                            <a href="index.php" class="nav-link">
                                 Captures d'écran
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
-                            <a href="#faq" class="nav-link">
+                            <a href="index.php" class="nav-link">
                                 FAQ
                             </a>
                         </li>
@@ -141,7 +149,7 @@
                         </li> -->
 
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">
+                            <a href="index.php" class="nav-link">
                                 Contact
                             </a>
                         </li>
@@ -160,76 +168,74 @@
                 </div>
             </div>
         </nav>
-         <!-- End Navbar Area -->
 
-         <!-- Start Main Banner Area -->
-        <div id="home"  class="main-banner">
-            <div class="d-table">
-                <div class="d-table-cell">
+        <div class="container">
+            <!-- <div class="accordion" id="accordionExample">
+                <button class="reload" style="heigth:30px; whith:30px; text-align:center">
+                <img src="assets/img/reload.png"width="20px" heigth="15px"/>
+            </div> -->
+            <div class="loading">
+                        <img id="loading" src="assets/img/loader2.gif" alt="image">
+                    </div>
+            <div class="reload">
+                    <button id="refresh" class="btn btn-secondary"><i class="fa fa-refresh"></i></button>
+                </div>
 
-                        <div class = 'stepClass'>
-                            <div class="container">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="steps">
-                                        <progress id="progress" value=0 max=100 ></progress>
-                                        <div class="step-item">
-                                            <button id="pending" class="step-button text-center" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#pending" aria-expanded="true" aria-controls="pending">
-                                                1
-                                            </button>
-                                            <div class="step-title">
-                                                Commande placée
-                                            </div>
-                                        </div>
-                                        <div class="step-item">
-                                            <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
-                                                2
-                                            </button>
-                                            <div class="step-title">
-                                                Commande acceptée
-                                            </div>
-                                        </div>
-                                        <div class="step-item">
-                                            <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
-                                                3
-                                            </button>
-                                            <div class="step-title">
-                                                Ramassage en cours
-                                            </div>
-                                        </div>
-                                        <div class="step-item">
-                                            <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
-                                                4
-                                            </button>
-                                            <div class="step-title">
-                                                Livraison en cours
-                                            </div>
-                                        </div>
-                                        <div class="step-item">
-                                            <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
-                                                5
-                                            </button>
-                                            <div class="step-title">
-                                                Livraison effectuée
-                                            </div>
-                                        </div>
-                                    </div><!--Steps-->
-                                </div><!--accordionExample-->
-                            </div><!--container-->
-                            <div class="reload">
-                                <button id="refresh" class="btn btn-secondary"><i class="fa fa-refresh"></i></button>
-                            </div>
-                        </div>
-
-                    <div class="container-fluid-2">
-                        <div id="map"></div>
+            <div class="steps">
+                <progress id="progress" value=0 max=100 ></progress>
+                <div class="step-item">
+                    <button id="pending" class="step-button text-center" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#pending" aria-expanded="true" aria-controls="pending">
+                        1
+                    </button>
+                    <div class="step-title">
+                        Placée
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
+                        2
+                    </button>
+                    <div class="step-title">
+                        Acceptée
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
+                        3
+                    </button>
+                    <div class="step-title">
+                        Ramassage en cours
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
+                        4
+                    </button>
+                    <div class="step-title">
+                        Livraison en cours
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
+                        5
+                    </button>
+                    <div class="step-title">
+                        Terminée
                     </div>
                 </div>
             </div>
+           
+            
+        </div>
+
+        <div class="container-fluid-2">
+            <div id="map"></div>
+        </div>
 
             <div class="default-shape">
                 <div class="shape-1">
@@ -449,6 +455,10 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpLgOmvCbiSOJ2UDSPpjI9E5QW3UlHbOg"></script>
-        <script type="module" src="assets/js/live.js?t=1491313943550"></script>
+        <script type="module" src="assets/js/live.js"></script>
+
+
+        <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>
