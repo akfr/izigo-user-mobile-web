@@ -93,10 +93,10 @@
                         </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="mailto:jomarsystems@gmail.com" class="nav-link">Email: jomarsystems@gmail.com</a>
+                        <a href="mailto:" class="nav-link">Email: </a>
                     </li>
                     <li class="nav-item mt-0">
-                        <a href="tel:0749221939" class="nav-link">Numéro: 0749221939</a>
+                        <a href="tel:" class="nav-link">Numéro: </a>
                     </li>
                 </ul>
             </div>
