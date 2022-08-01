@@ -50,24 +50,6 @@
         <!-- End Preloader Area -->
 
         <!-- Start Navbar Area -->
-        <!-- <nav class="navbar fixed-top navbar-expand-md flex-nowrap navbar-new-top">
-            <a href="/" class="navbar-brand"><img src="#" alt=""/>Bootstrap 4</a>
-            <ul class="nav navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item">
-                    <a class="nav-link px-2">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2">Link</a>
-                </li>
-                <li class="nav-item">
-                    <button type="button"  class="header-btn">Button</button>
-                </li>
-            </ul>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav> -->
         <nav class="navbar fixed-top navbar-expand-md navbar-new-bottom">
             <div class="navbar-collapse collapse pt-2 pt-md-0" id="navbar2">
 
@@ -107,11 +89,11 @@
             <div class="container-fluid">
                  <!-- <div class="log">  -->
                     <!-- <a class="navbar-brand logo" href="#home">
-                       
                     </a> -->
                     <div class="logo">
                         <a href="index.php">
-                            <h2>Izigo</h2>
+                            <!-- <h2>Izigo</h2> -->
+                            <img src="assets/img/logo2.png" alt="image">
                         </a>
                    </div>
                 
@@ -192,8 +174,8 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="banner-content">
-                                    <h1>Votre application en un clic</h1>
-                                    <p>Une application de livraison dans la grande region d'Abidjan en un clic</p>
+                                    <h1>Votre livraison en un clic</h1>
+                                    <p>Une application de livraison rapide sécuritaire et efficace dans la grande region d'Abidjan</p>
         
                                     <div class="banner-holder">
                                         <a href="#">
@@ -370,7 +352,6 @@
                 <div class="section-title">
                     <h2>Quelques fonctionnalités d'Izigo</h2>
                     <div class="bar"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
                 </div>
 
                 <div class="row">
@@ -379,8 +360,7 @@
                             <div class="icon">
                                 <i class="fa fa-sun"></i>
                             </div>
-                            <h3>Commander un produit</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Commander un colis</h3>
                         </div>
                     </div>
 
@@ -389,8 +369,7 @@
                             <div class="icon">
                                 <i class="fa fa-lightbulb"></i>
                             </div>
-                            <h3>Choisir le lieu de depart et d'arriver</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Choisir le lieu de depart et de livraison</h3>
                         </div>
                     </div>
 
@@ -399,8 +378,7 @@
                             <div class="icon">
                                 <i class="fa fa-desktop"></i>
                             </div>
-                            <h3>Mode de paiement</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Paiement digital ou cash</h3>
                         </div>
                     </div>
 
@@ -409,8 +387,7 @@
                             <div class="icon">
                                 <i class="fa fa-code"></i>
                             </div>
-                            <h3>gestion du type de colis</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Gestion du type de colis</h3>
                         </div>
                     </div>
 
@@ -419,8 +396,7 @@
                             <div class="icon">
                                 <i class="fa fa-eye"></i>
                             </div>
-                            <h3>Gestion du type d'angin pour la livraison</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Gestion du type d'engin pour la livraison</h3>
                         </div>
                     </div>
 
@@ -429,8 +405,7 @@
                             <div class="icon">
                                 <i class="fa fa-camera"></i>
                             </div>
-                            <h3>Voir detail de livraison</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.</p> -->
+                            <h3>Voir les détails de la livraison</h3>
                         </div>
                     </div>
                 </div>
@@ -466,7 +441,6 @@
                 <div class="section-title">
                     <h2>Voici Izigo</h2>
                     <div class="bar"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> -->
                 </div>
 
                 <div class="screenshot-slider owl-carousel owl-theme">
