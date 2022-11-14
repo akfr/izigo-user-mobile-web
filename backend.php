@@ -12,7 +12,7 @@ if(isset($_POST['action'])) {
 
 function getDriverLivePosition($con, $driverId) {
     $query = "select dmp.latitude, dmp.longitude, dm.f_name, dm.l_name, dm.phone, dm.identity_number from " .
-    " delivery_men_position dmp join delivery_men dm on dm.id = dmp.deliveryman_id where dmp.deliveryman_id = " . $driverId;
+    " delivery_histories dmp join delivery_men dm on dm.id = dmp.deliveryman_id where dmp.deliveryman_id = " . $driverId;
     $res = mysqli_query($con, $query) or die(mysqli_error($con));
     $row = mysqli_fetch_object($res);
     echo json_encode(['latitude' => $row->latitude, 'longitude' => $row->longitude, 
@@ -24,8 +24,6 @@ function getOrderInfo($con, $orderId) {
     $query = "select * from orders where id = " . $orderId;
     $res = mysqli_query($con, $query) or die(mysqli_error($con));
     $row = mysqli_fetch_object($res);
-    echo json_encode(['origin_address' => $row->origin_address, 
-    'destination_address' => $row->destination_address, 
-    "delivery_man_id" => $row->delivery_man_id, 'status' => $row->order_status]);
+    echo json_encode(['origin_address' => $row->origin_address, 'destination_address' => $row->destination_address, "delivery_man_id" => $row->delivery_man_id]);
 }
 ?>
