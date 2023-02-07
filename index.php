@@ -92,8 +92,9 @@
                     </a> -->
                     <div class="logo">
                         <a href="index.php">
+                        <img src="assets/img/logo.jpg" />
                             <!-- <h2>Izigo</h2> -->
-                            <img src="assets/img/logo2.png" alt="image">
+                            <!-- <img src="assets/img/logo2.png" alt="image"> -->
                         </a>
                    </div>
                 

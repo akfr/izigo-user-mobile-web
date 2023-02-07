@@ -28,7 +28,7 @@
     color: #fff;
 }
 .done {
-    background-color: var(--prm-color);
+    background-color: var(--prm-color) !important;
     color: #fff;
 }
 .step-item {

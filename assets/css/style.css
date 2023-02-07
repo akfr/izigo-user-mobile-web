@@ -429,12 +429,12 @@ Navbar Area CSS
   background-repeat: no-repeat; */
   font-size: 50px;
   margin-bottom: 0;
-  height: 60px;
-  width: 60px; 
+  height: 90px;
+  width: 90px; 
   margin-right: 200px;
   color: white;
   position: relative;
-    margin-top: 20px; 
+    /* margin-top: 20px;  */
 }  
 .logo h2{
   color: #fc6957;
