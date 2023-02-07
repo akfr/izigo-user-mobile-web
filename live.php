@@ -100,7 +100,8 @@
                     </a> -->
                     <div class="logo">
                         <a href="index.php">
-                            <h2>Izigo</h2>
+                            <img src="assets/img/logo.jpg" />
+                            <!-- <h2>Izigo</h2> -->
                         </a>
                    </div>
                 
@@ -193,27 +194,27 @@
                     </div>
                 </div>
                 <div class="step-item">
-                    <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
+                    <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
                         2
                     </button>
                     <div class="step-title">
                         Acceptée
                     </div>
                 </div>
-                <div class="step-item">
-                    <button id="processing" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#processing" aria-expanded="false" aria-controls="processing">
+                <!-- <div class="step-item">
+                    <button id="confirmed" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#confirmed" aria-expanded="false" aria-controls="confirmed">
                         3
                     </button>
                     <div class="step-title">
                         Ramassage en cours
                     </div>
-                </div>
+                </div> -->
                 <div class="step-item">
                     <button id="out_for_delivery" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#out_for_delivery" aria-expanded="false" aria-controls="out_for_delivery">
-                        4
+                        3
                     </button>
                     <div class="step-title">
                         Livraison en cours
@@ -222,19 +223,30 @@
                 <div class="step-item">
                     <button id="delivered" class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#delivered" aria-expanded="false" aria-controls="delivered">
-                        5
+                        4
                     </button>
                     <div class="step-title">
                         Terminée
                     </div>
                 </div>
             </div>
-           
-            
+
+            <div class="row">
+                <div id="no-driver" class="alert-danger">Il n'y a pas encore de chauffeur assigné à cette course</div>
+            </div>
+            <br/>
         </div>
 
         <div class="container-fluid-2">
             <div id="map"></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="date"></div>
+                <div id="lat"></div>
+                <div id="lng"></div>
+            </div>
         </div>
 
             <div class="default-shape">

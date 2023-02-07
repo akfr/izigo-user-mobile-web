@@ -189,7 +189,9 @@ jQuery(function ($) {
         var searchParams = new URLSearchParams(window.location.search);
         var orderId = searchParams.get('orderId')
         var driverMarkers = [];
-        $("#loading").hide();
+        var isLoaded = false;
+        // $("#loading").hide();
+        $("#loading").show();
 
         $.ajax({
             method: "POST",
@@ -201,6 +203,8 @@ jQuery(function ($) {
             handleOrderData(data)
 
             if (orderInfo.delivery_man_id != null) {
+                $("#no-driver").hide();  
+
                 setInterval(() => {
                     $.ajax({
                         method: "POST",
@@ -208,6 +212,10 @@ jQuery(function ($) {
                         data: { action: 'getDriverLivePosition', driverId: orderInfo.delivery_man_id }
                       })
                     .done(function( data, status, ok ) {
+                        if(!isLoaded){
+                            $("#loading").hide();
+                            isLoaded = true;
+                        }
                         driverMarkers.forEach(m => {
                             m.setMap(null);
                         });
@@ -237,8 +245,15 @@ jQuery(function ($) {
                           });
 
                           driverMarkers.push(marker);
+
+                          $("#date").text(driverPos.created_at);
+                          $("#lat").text(driverPos.latitude);
+                          $("#lng").text(driverPos.longitude);
                     });
                 }, 10000)
+            } else{
+                $("#loading").hide();
+                 $("#no-driver").show();  
             }
         });
     }
@@ -279,27 +294,30 @@ jQuery(function ($) {
         });
 
         if (orderInfo.status === 'pending') {
-            progress.setAttribute('value', 0 * 100 / 4 );
+            progress.setAttribute('value', 0/4 );
             $("#pending").addClass("done");
-        } else if(orderInfo.status === 'confirmed'){
-            progress.setAttribute('value', 1 * 100 / 4 );
+        } 
+        else if(orderInfo.status === 'processing') {
+            progress.setAttribute('value', 100/4 );
             $("#pending").addClass("done");
-            $("#confirmed").addClass("done");
-        } else if(orderInfo.status === 'processing'){
-            progress.setAttribute('value', 2 * 100 / 4 );
-            $("#pending").addClass("done");
-            $("#confirmed").addClass("done");
             $("#processing").addClass("done");
-        } else if(orderInfo.status === 'out_for_delivery'){
-            progress.setAttribute('value', 3 * 100 / 4 );
+        }
+        // else if(orderInfo.status === 'confirmed'){
+        //     progress.setAttribute('value', (2 * 100) / 4 );
+        //     $("#pending").addClass("done");
+        //     $("#processing").addClass("done");
+        //     $("#confirmed").addClass("done");
+        // }  
+        else if(orderInfo.status === 'out_for_delivery'){
+            progress.setAttribute('value', (3 * 100)/4 );
             $("#pending").addClass("done");
-            $("#confirmed").addClass("done");
+            // $("#confirmed").addClass("done");
             $("#processing").addClass("done");
             $("#out_for_delivery").addClass("done");
         } else if(orderInfo.status === 'delivered'){
-            progress.setAttribute('value', 4 * 100 / 4 );
+            progress.setAttribute('value', (4 * 100) / 4 );
             $("#pending").addClass("done");
-            $("#confirmed").addClass("done");
+            // $("#confirmed").addClass("done");
             $("#processing").addClass("done");
             $("#out_for_delivery").addClass("done");
             $("#delivered").addClass("done");
