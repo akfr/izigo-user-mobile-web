@@ -1346,11 +1346,11 @@
                                         Faq
                                     </a>
                                 </li>
-                                <!-- <li>
-                                    <a href="#contact">
-                                        Contact
+                                <li>
+                                    <a href="privacy.php">
+                                        Politiques de confidentialités
                                     </a>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -1424,9 +1424,6 @@
                     <p>
                         <i class="far fa-copyright"></i> 
                         2022 by jomarsystems
-                        <!-- <a href="https://hibootstrap.com" target="_blank">
-                            Hibootsrap
-                        </a> -->
                     </p>
                 </div>
             </div>
